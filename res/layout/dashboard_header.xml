@@ -1,0 +1,82 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/id_dashboard_header"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white" >
+
+    <ImageButton
+        android:id="@+id/btn_home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="@dimen/header_icon_margin"
+        android:background="@drawable/ic_launcher"
+        android:onClick="btnHomeClick" />
+
+    <ImageView
+        android:id="@+id/id_seperator_home"
+        android:layout_width="2dip"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/header_icon_margin"
+        android:layout_toRightOf="@id/btn_home"
+        android:background="@drawable/separator" />
+
+    <LinearLayout
+        android:id="@+id/header_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/txvheader_temp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="@string/app_name"
+            android:textAppearance="?android:textAppearanceSmall"
+            android:textColor="#ffffffff"
+            android:visibility="invisible"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txvheader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="@string/app_name"
+            android:textAppearance="?android:textAppearanceLarge"
+            android:textColor="#ffffffff"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txvheader_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="(Select google analytic account.)"
+            android:textAppearance="?android:textAppearanceSmall"
+            android:textColor="#ffffffff"
+            android:textStyle="normal" />
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/btn_setting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerInParent="true"
+        android:layout_marginRight="@dimen/header_icon_margin"
+        android:background="@drawable/ic_launcher"
+        android:onClick="btnSettingClick" />
+
+    <ImageView
+        android:id="@+id/id_seperator_setting"
+        android:layout_width="2dip"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/header_icon_margin"
+        android:layout_toLeftOf="@id/btn_setting"
+        android:background="@drawable/separator" />
+
+</RelativeLayout>
